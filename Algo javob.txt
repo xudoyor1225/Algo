@@ -1,0 +1,1654 @@
+1)
+x= int(input())
+s=x**3
+print(s)
+2)
+import math
+r1,r2,r3= map(float, input().split(" "))
+s1=math.pi*r1*r1
+s2=math.pi*r2*r2
+s3=math.pi*r3*r3
+print("%.2f" % s1,"%.2f" % s2,"%.2f" % s3)
+3) 
+a,b= map(float, input().split(" "))
+x=2*a/b
+print("%.2f" % x)   
+4) 
+import math
+r1=int(input())
+
+s1=4*math.pi*r1*r1
+print("%.2f" % s1)
+5)
+
+
+import math
+
+a,b,c= map(float, input().split(" "))
+
+p=(a+b+c)/2
+print("%.2f" % p)
+7)
+import math
+
+a,b= map(float, input().split(" "))
+
+p= math.pi*b*b*a/3
+print("%.2f" % p)
+8)
+a,b= map(float, input().split(" "))
+
+t=b/a
+print("%.2f" % t)
+9)
+import math
+h=int(input())
+
+t=math.sqrt(2*h/9.8)
+print("%.2f" % t)  
+10)
+x=int(input())
+t=0.001*x*365*24*60*60
+print("%.0f" % t)
+11)
+x=int(input())
+
+s=(1+x)/2*x
+print("%.0f" % s)
+12)
+x=int(input())
+
+s=x*9.8
+print("%.2f" % s)
+13)
+a,b= map(float, input().split(" "))
+
+f=a*b
+print("%.0f" % f)
+14)
+a,b= map(float, input().split(" "))
+
+f=a/b
+print("%.3f" % f)   
+15)
+a,b,c= map(float, input().split(" "))
+
+r=a*b*c/(a*b+a*c+b*c)
+print("%.2f" % r)
+16)
+from math import fabs,e
+x,y= map(float, input().split(" "))
+s1=x+y
+s2=y*y+fabs((y**2+2)/(x+(x**3/5)))
+s3=pow(e,y+2)
+c=s3+s1/s2
+print ("%.2f" % c)
+17)    from math import pi, cos, tan, log
+x,y= map(float, input().split(" "))
+s1=2*tan(x+pi/6)
+s2=cos(y+x*x)*cos(y+x*x)
+s3=log(x*x+2,2)
+c=(s1/(1/3+s2))+s3
+print ("%.2f" % c)   
+18) from math import *
+x,y = map(float,input().split(" "))
+t1 = 1/(x+2/x**2+3/x**3)+exp(x**2+3*x)
+t2 = atan(x+y)+fabs(5+x)**2
+t3 = pow(cos(y**2+x**2/2),2)
+f2 = t1/t2-t3
+print("%.2f" % f2)    
+19)    from math import cos, fabs, sqrt, e, log 
+x,y= map(float, input().split(" "))
+s1=(x+y)*(x+y)
+s2=sqrt(fabs(y)+2)
+s3=x-(x*y/((x*x/2)-5))
+s4=cos(x+y)*cos(x+y)
+s5=pow((x+y),1/3)
+c=log((fabs(s1+s2-s3)),e)+s4/s5
+print("%.2f" % c)
+
+20)
+    from math import cos, fabs, sin
+x,y= map(float, input().split(" "))
+s1=x*x+1
+s2=(x*y+y*y)
+s3=y*y+(y+x*y)/(fabs(x*y)+5)
+s4=1+cos(x)+1/sin(fabs(x))
+c=s1/(x*x+s2/s3)+1/s4
+print("%.2f" % c)  
+21)
+    a,b= map(float, input().split(" "))
+s1=pow(a,1/5)
+s2=pow(b*(a+b)/(2*b+a*b),1/4)
+s3=(a*a+b*b+2)
+c=s1+s2*s3
+print("%.2f" % c)    
+
+22)
+    from math import *
+x1,x2,c,d= map(float, input().split(" "))
+s1=sin(fabs(c*(x2**3)+d*(x1**3)-c*d))*sin(fabs(c*(x2**3)+d*(x1**3)-c*d))
+s2=pow(c*x1*x1+d*x2*x2+7,1/2)
+s3=tan(x1*x2*x2+d**3)
+c=fabs(s1/s2)+s3
+print("%.2f" % c)
+23)
+    def main():
+    from math import cos
+
+
+    a,b,c,d,x = map(float, input().split())
+    try:
+        y = (a*x**2 + b*x + c) / (x*a**3+ a**2 + a ** (b-c)) + cos(abs(
+            (a*x + b) / (c*x +d + 2**c)
+        ))
+    except ZeroDivisionError:
+        print('1.00')
+        return
+
+    print(f'{y:.2f}')
+
+main()  
+24)
+    from math import sqrt,fabs,cos
+a,b,c,x= map(float, input().split(" "))
+s1=sqrt(fabs(x**3+3*x)+cos(x-2))
+s2=a/4+b/3+c/2+1
+c=0.75+((8.2*x*x+s1)/s2)
+print("%.2f" % c)    
+25)
+    from math import *
+a,x = map(float, input().split(" "))
+
+t1 = sqrt(x-1)+sqrt(x+2)
+t2 = log(sqrt(a*x*x)+2,10)
+t3 = sqrt(x+2)+sqrt(x+24)+pow(x,5)
+TT = (t1+t2)/sqrt(t3)
+
+print("%.2f" % TT)    
+26)
+    from math import*
+a,x,y= map(float, input().split(" "))
+s1=exp(x*y)-x*sin(a*x)-(x*x+2)/(fabs(x)+5)
+s2=log((x*x+2),e)+5
+c=sqrt(s1)+sqrt(s2)
+print("%.2f" % c)   
+27)
+    from math import*
+
+x=float(input())
+s1=2*tan(x+2)-cos(x+pow(2,x))
+s2=1+cos(x+2)*cos(x+2)
+s3=sin(x*x)
+s4=x*x+3
+c=sqrt(s1/s2)+s3/s4
+print("%.2f" % c)  
+28)
+    from math import*
+a,x= map(float, input().split(" "))
+s1=x*sin(x/2+x/3+x/4)
+s2=log(x*x-2,10)+pow(3,a)
+s3=cos(x+3)*sin(x+3)+8
+c=s1+s2/s3
+print("%.2f" % c)
+29)
+    from math import*
+a,x,y= map(float, input().split(" "))
+s1=y*y+exp(x)
+s2=exp(x)+a/(x*x+2)
+s3=(cos(x))**2/sin(x*x)
+c=sqrt(s1+sqrt(s2)+s3)+(cos(x))**3
+print("%.2f" % c)
+30)
+    from math import*
+x,y,z= map(float, input().split(" "))
+s1=sqrt(x+pow(fabs(y)+2,1/4))
+s2=exp(x-1)
+s3=sin(z+2)
+
+c=pow(2,-x)*s1*pow(s2/s3+2,1/3)
+print("%.2f" % c)
+31)
+    a,b= map(float, input().split(" "))
+if a>b:
+    print(a, b)
+else:
+    print(b, a) 
+32) 
+    x,y,z= map(float, input().split(" "))
+if x>y>z:
+    print(x, z) 
+if x>z>y:
+    print(x, y)    
+if y>x>z:
+    print(y, z)
+if y>z>x:
+    print(y, x)    
+if z>y>x:
+    print(z, x)
+if z>x>y:
+    print(z, y) 
+       
+33)
+    x,y,z = map(float,input().split(" ")) 
+maxx = max(x+y+z,x,y,z)
+minn = (min(x+y/2, x, y,z))**2
+print("%.2f" % maxx, "%.2f" % minn)    
+34)
+    x,y,z= map(float, input().split(" "))
+if x<y<z:
+    print("YES")
+else:
+    print("NO")
+35)
+    from math import *
+a,b,c=map(float ,input().split())
+if (a>=b) and (b>=c):
+    
+    print(int(2*a),int(2*b) ,end=" ")
+    print(int(2*c))
+else:
+    x=abs(a)
+    y=abs(b)
+    z=abs(c)
+    print(int(x),int(y) ,end=" ")
+    print(int(z))    
+36)
+    x,y= map(int, input().split(" "))
+if y>x:
+    print(x, y)
+else:
+    print(x)    
+37)
+    x,y= map(int, input().split(" "))
+if y>=x:
+    print(0, y)
+else:
+    print(x,y)    
+38)
+    x,y,z= map(float, input().split(" "))
+if 1<=x<=3:
+    print(x, end=' ')
+if 1<=y<=3:
+    print(y, end=' ')
+if 1<=z<=3:
+    print(z)    
+39)
+    x,y= map(float, input().split(" "))
+if x>y:
+    print(2*x*2*y, (x+y)/2)
+else:
+    print((x+y)/2, 2*x*2*y)    
+40)
+    x,y,z= map(int, input().split(" "))
+if x>0:
+    print(x*x, end=' ')
+else:
+    print(x, end=' ')
+if y>0:
+    print(y*y, end=' ')
+else:
+    print(y, end=' ')    
+if z>0:
+    print(z*z, end=' ')
+else:
+    print(z, end=' ')    
+41)
+    x,y,z = map(float,input().split(" "))
+if (x<1 and y<1 and z<1):
+    if x==min(x,y,z):
+        x=(y+z)/2
+    elif y==min(x,y,z):
+        y=(x+z)/2
+    else:
+        z=(y+x)/2
+print(x,y,z)
+   
+42)
+    a,b,c,d= map(float, input().split(" "))
+x=min(a,b,c,d)  
+if a<=b<=c<=d:
+    print(d, d, d, d)
+else:
+    print(x, x, x, x)
+43)
+    from math import fabs  
+x,y= map(float, input().split(" ")) 
+if x<0 and y<0:
+    print(fabs(x), fabs(y))
+if x>0 and y>0:
+    print(x, y)
+if x>0 and y<0:
+    print(x+0.5, y+0.5)
+if x<0 and y>0:
+    print(x+0.5, y+0.5)
+44)
+    x,y,z= map(int, input().split(" ")) 
+if x+y>z and x+z>y and z+y>x:
+    print("YES")
+else:
+    print("NO")
+45)
+    from math import sqrt
+a,b,c= map(int, input().split(" "))
+z=b*b-4*a*c
+ 
+if z>=0:
+    x=(-b+sqrt(z))/(2*a)
+    d=(-b-sqrt(z))/(2*a)
+    print("%.2f" % x, end=' ')
+    print("%.2f" % d)
+else:
+    print("NO")  
+46)
+    a= float(input())
+if a<-1:
+    y=1/a/a
+elif a<2:
+    y=a*a
+else :
+    y=4
+print ('%.2f' % y)    
+47)
+    from math import*
+a=float(input())
+if a<1:
+    print("%.2f" % fabs(a))
+if 1<=a<2:
+    print("%.2f" % 1)
+if 2<=a:
+    print("%.2f" % (-2*a+5))    
+48)
+    a=float(input())
+if a<=0:
+    print("%.2f" % -a)
+if a>0:
+    print("%.2f" % (-a*a))
+   
+49)
+    from math import fabs 
+a=float(input())
+print("%.2f" % fabs(fabs(a)-1))
+50)
+    x,y= map(float, input().split(" "))
+if x>=-1 and x<=1 and y<=3*x+2 and y<=-3*x+2 and y>=-1:
+    print("yes")
+else:
+    print("no")
+51)
+    from math import fabs
+x,y= map(float, input().split(" "))
+if x>=-1 and x<=1 and y<=fabs(x) and y>=-2:
+    print("yes")
+else:
+    print("no")
+52)
+    x,y= map(float, input().split(" "))
+if (y<=2*x+3 and y<=-x and y>=0) or (y<=2*x+3 and y<=0 and y>=1/3*(x-1)):
+    print("yes")
+else:
+    print("no")
+53)
+    from math import fabs
+
+x,y= map(float, input().split(" "))
+
+if (y<=1.5 and y>=1 and x>=-2 and x<=2) or (y>=fabs(x) and y<=1):
+       print("yes")
+else:
+    print("no")
+54)
+   x,y= map(float, input().split(" "))
+
+if x*x+y*y>=1 and x*x+y*y<=4 and y>=0:
+       print("yes")
+else:
+    print("no")
+    
+55)
+    x,y= map(float, input().split(" "))
+
+if y*y<1-x*x:
+       print("yes")
+else:
+    print("no")    
+56)
+    x,y= map(float, input().split(" "))
+
+if x*x+y*y>=1./4 and x*x+y*y<=1:
+       print("yes")
+else:
+    print("no")
+57)
+    x,y= map(float, input().split(" "))
+
+if y>=-1 and y<=1 and x>=-1 and x<=1:
+       print("yes")
+else:
+    print("no")
+    
+58)
+    x,y= map(float, input().split(" "))
+
+if x*x+y*y<=1 and y<=x/2:
+       print("yes")
+else:
+    print("no")
+59)
+    from math import fabs
+
+x,y= map(float, input().split(" "))
+
+if y>=fabs(2*x)-1 and y<=1-fabs(2*x):
+       print("yes")
+else:
+    print("no")
+60)
+    x,y= map(float, input().split(" "))
+
+if x*x+y*y<=1 and y>=-x/2-1 and y<=x/2+1:
+       print("yes")
+else:
+    print("no")
+61)
+    from math import sin
+n=int(input())
+s=0
+for i in range(1,n+1,1):
+    s+=sin(i)/pow(2,i)
+print("%.2f" % s)
+62)
+
+
+    from math import sin
+n=int(input())
+s=0
+for i in range(1,n+1,1):
+    s+=(pow(-1,(i-1)))*sin(i**i)/pow(2,i)
+print("%.2f" % s)
+    
+63)
+    from math import *
+n=int(input())
+s=0
+for i in range(1,n+1):
+    s+=pow(-1,i-1)*1/factorial(2*i-1)
+print("%.4f" % s)
+    
+64)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=pow(-1,i-1)*1/pow(x,2*i)
+print("%.3f" % s)
+    
+65)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=i*1/pow(x,2*i)
+print("%.3f" % s)
+    
+66)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=(pow(-1,i-1))*sin(i*x)*1/i
+print("%.3f" % s)    
+
+67)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=pow(x,i)/sqrt(i)
+print("%.3f" % s)    
+68)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=pow(x,i)/factorial(i)
+print("%.3f" % s)
+69)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=pow(-1,i)*pow(x,i)/factorial(i)
+print("%.3f" % s)    
+
+70)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=pow(-1,i-1)*pow(x,2*i-1)/factorial(2*i-1)
+print("%.3f" % s)
+    
+71)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=pow(-1,i-1)*pow(x,2*i-2)/factorial(2*i-2)
+print("%.3f" % s)    
+
+72)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=pow(x,2*i-2)/factorial(2*i-2)
+print("%.3f" % s)    
+
+73)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=pow(x,2*i-1)/(2*i-1)
+print("%.3f" % s)    
+
+74)
+    from math import *
+n,x= map(int, input().split(" "))
+s=0
+for i in range(1,n+1):
+    s+=pow(x,2*i-1)/factorial(2*i-1)
+print("%.3f" % s)
+    
+75)
+    from math import *
+n,x= map(int, input().split(" "))
+s=1
+for i in range(1,n+1):
+    s+=pow(-1,i)*pow(x,i)/factorial(i)
+print("%.3f" % s)    
+76)
+    from math import *
+a,b,c= map(int, input().split(" "))
+s=0
+for i in range(a,c+1,3):
+    s+=pow((a*i+b)/(b**2+cos(i)**2),(1/3))-sin(i**2)/(a*b)
+print("%.2f" % s)    
+77)
+    from math import *
+a,b,c,d= map(int, input().split(" "))
+s=0
+for i in range(c,d+1,2):
+    s+=pow((sin(a*i)+b**(2*c))/(b**2+cos(i)**2),(1/3))-sin(i**2)/(a*b)
+print("%.2f" % s)    
+78)
+    from math import *
+a,b,c= map(int, input().split(" "))
+s=0
+for i in range(a,b+1,2):
+    s+=(pow(a,b)+pow(b,i)+pow(c,a))/(2*i*i+3*pow(a,i))
+print("%.2f" % s)
+79)
+    from math import pi, cos
+# a,b,c= map(int, input().split(" "))
+a=int(input())
+s=0
+# for i in range(-pi/2,pi+1,pi/19):
+x=-pi/2   
+while x<=pi:
+    s+=pow(a,a/3)+x*x*cos(a*x)
+    x+=pi/19
+print("%.2f" % s)    
+80)
+    from math import sin, cos
+
+a=int(input())
+
+
+x=0
+s=0   
+while x<=10:
+    s+=a*cos(x)-sin(x*x)
+    x+=0.5
+print("%.2f" % s)    
+
+81)
+    from math import sin, cos
+a,b= map(int, input().split(" "))
+
+s=0
+for x in range(1,13,2):
+    s1=b+sin(x)
+    s2=a**3+cos(x**3)**2
+    s+=a*a+(s1/s2)**(1/5)
+    
+print("%.2f" % s)
+    
+82)
+    from math import sin, cos
+a,b,c= map(int, input().split(" "))
+
+s=0
+for x in range(1,11,3):
+    
+    s+=a*x*x/b+x/c
+    
+print("%.2f" % s)
+83)
+    from math import sin, cos
+a,b,c= map(int, input().split(" "))
+
+
+# for x in range(1,11,3):
+x=5 
+s=0   
+while x<=10 :  
+    s+=(a*a+b*x+pow(x,c))/(a*a+b*b+x*x)
+    x+=0.5
+print("%.2f" % s)    
+84)
+    from math import sin, cos
+a,b,c= map(int, input().split(" "))
+
+
+# for x in range(1,11,3):
+x=-1 
+s=0   
+while x<=1 :  
+    s+=pow((sin(a*x)+b**c)/(b**2+cos(x)**2),1/3)-sin(x*x)/(a*b)
+    x+=0.25
+print("%.2f" % s)    
+
+85)
+    from math import sin, cos
+a,b,c= map(int, input().split(" "))
+
+
+# for x in range(1,11,3):
+x=1 
+s=0   
+while x<=20 :  
+    s+=(a*x*x+b*x+c)/(a*a+b*b+x*x)
+    x+=5
+print("%.2f" % s)    
+
+86)
+    from math import sin, cos
+a,b,c= map(int, input().split(" "))
+
+
+# for x in range(1,11,3):
+x=c 
+s=0   
+while x<=b :  
+    s+=a*a*cos(x)+sin(x)/2+b*x*x
+    x+=0.25
+print("%.2f" % s)    
+
+87)
+    from math import*
+# a,b,c= map(int, input().split(" "))
+a=int(input())
+
+# for x in range(1,11,3):
+x=-pi/2 
+s=0   
+while x<=pi :  
+    s+=2*pow(a**sin(2*x),1/3)+x*x*cos(a*x)
+    x+=pi/10
+print("%.2f" % s)  
+88)
+    from math import*
+a,b,c,d= map(int, input().split(" "))
+# a=int(input())
+
+# for x in range(1,11,3):
+x=d 
+s=0   
+while x<=c :  
+    s+=pow((a*x+b)/(b*b+cos(x)*cos(x)),1/5)-sin(x*x)/(a*b)
+    x+=1.5
+print("%.2f" % s)   
+89)
+    from math import*
+a,b,c= map(int, input().split(" "))
+# a=int(input())
+
+# for x in range(1,11,3):
+x=0
+s=0   
+while x<=1 :  
+    s+=sqrt((sin(a*x)+b**c)/(b*b+cos(x)**2))-sin(x*x)/(a*b)
+    x+=0.25
+print("%.2f" % s)    
+
+90)
+    from math import*
+a,b,c= map(int, input().split(" "))
+# a=int(input())
+
+# for x in range(1,11,3):
+x=-pi
+s=0   
+while x<=pi :  
+    s+=(log(a**(2*sin(x)))+exp(2*x))/(atan(x)+b)+c
+    x+=pi/10
+print("%.2f" % s)
+91)
+    import math
+a, b, c, d = map(int, input().split())
+s = 0
+for m in range(1, a + 1):
+    s += (3 * m**3 + 4 * m + 5) / (m**3 + math.log(m))
+p = 1
+for k in range(1, b + 1):
+    p *= k / (k**3 + 7 * k + 5)
+sp = 0
+for i in range(1, c + 1):
+    p1 = 1
+    for m in range(1, d + 1):
+        p1 *= (math.log(i) + m**i) / m**i
+    sp += p1
+print(f"{s:.2f} {p:.2f} {sp:.2f}")
+    
+92)
+    from math import *
+x , y , c , b =map(int , input() . split())
+s = 0 
+for a in range(1 , x + 1):
+    s += (a**2 + 2 * a) / (a**3 + a * cos(a)**2 + 1)
+P = 1 
+for i in range(1 , y + 1):
+    P *= (i**2 + 1) / (pow(i**3 , 1/i) + 2)
+sp = 0 
+for i in range(1 , c + 1 ):
+    p = 1
+    for k in range(1 , b + 1):
+        p *= log( (pow(k , i) + pow(k , 1/i)) / (k**3 + pow( i , 1/k)) )
+    sp += p
+print(f"{s:.2f} {P:.2f} {sp:.2f}")   
+93)
+    from math import sin, cos
+x,y,a,b=map(int, input().split(" "))
+s=0
+for k in range(1,x+1):
+    s+=(k*k+sin(k)+5)/(pow(k**7+1,1/5))
+p=1
+for n in range(1,y+1):
+    p*=(n+n**(1/2))/(n-pow(n+1,1/5))
+sp=0
+for k in range(1,a+1):
+    p1=1
+    for i in range(1, b+1):
+        p1*=(i*i+k**(2/i))/((sin(i)+cos(k))*i**k)
+    sp+=p1
+print("%.2f" % s, "%.2f" % p, "%.2f" % sp)     
+
+94)
+    from math import*
+x,y,c,d=map(int, input().split(" "))
+s=0
+for a in range(1,x+1):
+    s+=(2*a+cos(a))**2
+p=1
+for n in range(1,y+1):
+    p*=(n+6)/pow(n*n+2,1/2)
+sp=0
+for k in range(1,c+1):
+    p1=0
+    for b in range(1, d+1):
+        p1+=(k*k+b)/pow((b*b+k*k),1/2)
+    sp+=p1
+print("%.2f" % s, "%.2f" % p, "%.2f" % sp)     
+
+95)
+    import math
+x, y, c, d = map(int, input().split())
+s = 0
+for i in range(1, x+1):
+    s += (pow(i, 4) + i*i + 3) / math.sqrt(i + math.exp(i))
+p = 0
+for k in range(1, y+1):
+    p += (k+1) / (pow(k, 3) + 5*k)
+sp = 0
+for m in range(1, c+1):
+    p1 = 1
+    for n in range(1, d+1):
+        p1 *= math.sqrt(abs(pow(m, n) - pow(n, m)) / (pow(m, n) + pow(n, m)))
+    sp += p1
+print('{:.2f} {:.2f} {:.2f}'.format(s, p, sp))
+96)
+    from math import*
+x,y,c,d=map(int, input().split(" "))
+s=0
+for k in range(1,x+1):
+    s+=(pow(-1,k)*(k+1))/(k**3+k*k+1)
+p=1
+for i in range(1,y+1):
+    p*=((i**3+fabs(i-9))/(log(i)+7*i))
+sp=1
+for n in range(1,c+1):
+    p1=0
+    for m in range(1, d+1):
+        p1+=((pow(-1,m)*(log(m+5))/(m**(n+3)+n*m)))
+    sp*=p1
+print("%.2f" % s, "%.2f" % p, "%.2f" % sp)    
+97)
+    from math import*
+x,y,c,d=map(int, input().split(" "))
+s=0
+for n in range(1,x+1):
+    s+=1/(5-17*n+n**3)
+p=1
+for m in range(1,y+1):
+    p*=sqrt(fabs(m-5)+1)/(m*m+4*m-1)
+sp=0
+for i in range(1,c+1):
+    p1=1
+    for k in range(1, d+1):
+        p1*=pow(-1,i)*pow(fabs(sin(k)+exp(k)),1/7)/(2*fabs(4*i**3-k**4))
+    sp+=p1
+print("%.2f" % s, "%.2f" % p, "%.2f" % sp)     
+98)
+    from math import*
+x,y,c,d=map(int, input().split(" "))
+s=0
+for a in range(1,x+1):
+    s+=(4*a+6*log(a))/(a*a+a)
+p=1
+for a in range(1,y+1):
+    p*=fabs(a-6*cos(a))/(a*a+pow(a,log(a)))
+sp=0
+for k in range(1,c+1):
+    p1=1
+    for a in range(1, d+1):
+        p1*=(a*k+x)/(k*k+y*y)
+    sp+=p1
+print("%.2f" % s, "%.2f" % p, "%.2f" % sp)     
+
+99)
+    from math import*
+x,y,c,d=map(int, input().split(" "))
+s=0
+for k in range(1,x+1):
+    s+=k**3+exp(k)
+p=1
+for a in range(3,y+1):
+    p*=a*x/sqrt(a*a+x*x)
+sp=0
+for i in range(1,c+1):
+    p1=1
+    for j in range(1, d+1):
+        p1*=(i*x+j*j)/sqrt(i*i+j*y)
+    sp+=p1
+print("%.2f" % s, "%.2f" % p, "%.2f" % sp)    
+
+100)
+    from math import *
+x,y,c,d = map(int, input().split(" "))
+
+S = 0
+for a in range(1,x+1):
+    S += (a*x+4)/sqrt(a+log(6))
+
+P = 1
+for a in range(1,y+1):
+    P *= (a*x**2+6)/sin(a*x)
+
+SP = 1
+
+for i in range(1,c+1):
+    T = 1 
+    for j in range(1,d+1):
+        T *= (i*j+y*x)/sqrt((j*x+y)**i)
+    SP *= T
+
+print("%.2f" % S,"%.2f" % P,"%.2f" % SP)    
+101)
+    n = int(input())
+a = list(map(int, input().split()))
+
+middle = sum(a)/len(a)
+
+S = 0
+cnt = 0
+for i in range(0,n):
+    if a[i] < middle:
+        S += a[i]
+        cnt += 1
+
+j = S/cnt
+
+print(f"{j:.2f}")    
+102)
+    n=int(input())
+v=[float(j) for j in input().split()]
+a,b=map(int,input().split())
+t=min(v)
+for i in range(a-1,b):
+    v[i]=v[i]/t+0.01
+print(*[f"{x:.1f}" for x in v]
+103)
+    n=int(input())
+a = list(map(int, input().split()))
+k,l=map(int, input().split())
+s=0
+
+for i in range(k-1,l):			
+    s+=a[i]
+print("%.1f" % (s/(l-k+1)))    
+105)
+    n=int(input())
+a = list(map(int, input().split()))
+x,y=map(int, input().split())
+s=0
+b=sum(a)
+z=0
+for i in range(x-1,y) :
+    s+=a[i]
+    z+=1    
+print("%.2f" % ((b-s)/(n-z)))     
+
+106)
+    n=int(input())
+a = list(map(int, input().split()))
+s=0
+for i in range(0,n):
+    s+=a[i]*a[i]
+print(s)   
+107)
+    n=int(input())
+a = list(map(int, input().split()))
+maxx=max(a)
+s=0
+for i in range(0,n):
+    s=a[i]/maxx
+    print("%.2f" % s, end=" ")    
+108)
+    n=int(input())
+a = list(map(int, input().split()))
+x=min(a)
+s=0
+for i in range(0,n):
+    s=a[i]/x
+    print("%.2f" % s, end=" ")     
+109)
+    from math import *
+n=int(input())
+a = list(map(int, input().split()))
+m=int (input())
+s=1
+for i in range(0,n):
+    if a[i]>m:
+        s*=a[i]
+    
+print("%.2f" % log(s), end=" ")     
+
+110)
+    from math import *
+n=int(input())
+a = list(map(int, input().split()))
+k,m = map(int, input().split())
+s=1
+for i in range(0,n):
+    if a[i]==k or a[i]==m:
+        s*=a[i]
+    
+print(s)     
+111)
+    n=int(input())
+a = list(map(int, input().split()))
+m =int(input())
+s=0
+for i in range(0,n):
+    if a[i]>m:
+        s+=a[i]
+    
+print(s)
+112)
+    n=int(input())
+a = list(map(int, input().split()))
+
+s=1
+for i in range(0,n,2):
+    s*=a[i]
+    
+    
+c=0    
+for j in range(1,n,2):
+    c+=a[j]
+    
+print('%.2f' % (s/c))     
+
+113)
+    n=int(input())
+a = list(map(int, input().split()))
+x=0
+s=0
+for i in range(0,n):
+    if a[i]<0:
+        s+=a[i]
+        x+=1
+print("%.2f" % (s/x))      
+
+114)
+    from math import sin
+n=int(input())
+a = list(map(int, input().split()))
+
+s=1
+for i in range(0,n):
+    if a[i]%2==0 or a[i]%5==0:
+        s*=a[i]
+print("%.2f" % sin(s))     
+
+115)
+
+
+n=int(input())
+a = list(map(int, input().split()))
+m=int(input())
+s=0
+for i in range(0,n):
+    if a[i]<m:
+        s+=(a[i])**2
+print(s)     
+116)
+def main():
+    input()
+    a = [int(i) for i in input().split()]
+    m = max(a)
+    a = [print(f'{i/m+0.00001:.2f}', end=' ') for i in a]
+main()
+
+117)
+    n=int(input())
+a = list(map(int, input().split()))
+
+s=0
+for i in range(0,n,2):
+    s+=a[i]
+print(s)
+118)
+    n=int(input())
+a = list(map(int, input().split()))
+x=0
+s=0
+for i in range(0,n):
+    if a[i]%2==1:
+        s+=a[i]
+        x+=1
+print("%.2f" % (s/x+0.0001))
+120)
+    n=int(input())
+a = list(map(int, input().split()))
+x,y=map(int, input().split())
+s=0
+for i in range(0,n):
+    if a[i]>=x and a[i]<=y:
+        s+=1  
+print(n-s)
+    
+121)
+    n=int(input())
+a = list(map(int, input().split()))
+z=int (input())
+s=0
+for i in range(z,n):
+    s+=a[i]  
+print(s)   
+122)
+    n=int(input())
+a = list(map(int, input().split()))
+
+s=0
+x=0
+for i in range(0,n):
+    s+=(a[i])**2 
+    x+=a[i]
+print(s)
+print("%.2f" % (x/n))    
+
+123)
+    n=int(input())
+a = list(map(int, input().split()))
+
+
+x=0
+for i in range(1,n,2):
+    x+=a[i]
+for j in range(0,n):
+    if a[j]%2!=1 or a[j]<0:
+        print("%.2f" % a[j])
+    else:
+        print("%.2f" % (a[j]/x), end=" ")    
+
+124)
+    s=0
+n=int(input())
+aa=list(map(int,input().split()))
+k=int(input())
+maxx=max(aa)
+for i in range(n):
+    if aa[i]==maxx:
+        print(aa[k-1])
+    elif i==k-1:
+        print(maxx)
+    else:
+        print(aa[i])    
+
+125)
+
+
+    n=int(input())
+a = list(map(int, input().split()))
+k,l=map(int, input().split()) 
+s=0
+for i in range(k-1,l) :
+    s+=(a[i])**3
+print(s)        
+126)
+    from math import log    
+n=int(input())
+a = list(map(int, input().split()))
+
+s=sum(a)
+for i in range(0,n) :
+    
+    if a[i]<0:
+        a[i]=log(s/n)
+for j in a:  
+    print("%.2f" % (j), end=" ")    
+
+127)
+    n=int(input())
+a = list(map(int, input().split()))
+m=min(a)
+for i in range(0,n) :
+    if a[i]<0:
+        a[i]=m*m 
+print(*a)     
+128)
+    n=int(input())
+a = list(map(int, input().split()))
+s=0
+x=0
+for i in range(0,n) :
+    if a[i]%2==0:
+        s+=a[i]
+        x+=1 
+print("%.2f" % (s/x))  
+129)
+    n=int(input())
+a = list(map(int, input().split()))
+s=0
+
+for i in range(0,n) :
+    if a[i]%2==0 or a[i]%3==0 or a[i]%5==0:
+        s+=a[i]
+        
+print(s)     
+130)
+    n, m = map(int, input().split())
+b = []
+
+v = []
+max_v = []
+min_v = []
+
+for i in range(0,n):  
+    a = list(map(int, input().split()))
+    v.append(sum(a))
+    max_v.append(max(a))
+    min_v.append(min(a))
+    b.append(a)
+    
+print(*v)
+print(max(max_v),min(min_v))    
+
+131)
+    n, m = map(int, input().split())
+b = []
+max_v = []
+min_v = []
+
+for i in range(n):
+    a = list(map(int, input().split()))
+    b.append(a)
+    max_v.append(max(a))
+    min_v.append(min(a))
+# Ustun elementlari yig'indisi
+v = [sum(n) for n in zip(*b)]
+
+print(*v)
+
+print(max(max_v), min(min_v))    
+
+132)
+    z = int(input())
+a = list(map(int, input().split()))
+n, m = map(int, input().split())
+
+for i in range(0, n * m - z):
+    a.append(0)
+
+# Reshaping the list into a matrix
+v = []
+index = 0
+for i in range(n):
+    r = []
+    for j in range(m):
+        r.append(a[index])
+        index += 1
+    v.append(r)
+for j in v:
+    print(*j)    
+
+133)
+
+    n=int(input())
+a,b=[],[]
+for i in range(n):
+    a.append(list(map(int,input().split())))
+for i in range(n):
+    b.append(list(map(int,input().split())))
+for i in range(n):
+    print(*a[i],*b[i])    
+
+134)
+
+    n, m = map(int, input().split())
+a = [list(map(int, input().split())) for _ in range(n)]
+b = list(map(int, input().split()))
+
+#134
+for i in range(n):
+    if a[i][0] < b[0]:
+        x = i
+        break
+
+
+for i in range(n):
+    if i == x:
+        print(*b)
+    print(*a[i])
+
+135)
+    n, m = map(int, input().split())
+# b = []
+
+v = []
+
+for i in range(0, n):
+    a = list(map(int, input().split()))
+    v.append(a)
+    # b.append(a)
+z=int(input())
+v.pop(z-1)
+
+for j in v:
+
+    print(*j)    
+136)
+    n, m = map(int, input().split())
+a=[]
+v=[]
+for i in range(n):
+    a.append(list(map(int,input().split())))
+
+z=int(input())
+for i in a:
+    del i[z-1]
+for j in a:
+    print(*j)
+137)
+    a,b=[],[]
+n=int(input())
+for i in range(n):
+    a.append(list(map(int,input().split())))
+m=int(input())
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        if a[i][j]%m==0:
+           b.append(a[i][j])
+print(f"{(sum(b)/len(b)):.2f}")    
+
+138)
+    n=int(input())
+a=[]
+v=[]
+d=[]
+for i in range(n):
+    a.append(list(map(int,input().split())))
+
+for i in range(0,n):
+    for j in range(0,n):
+        if i==j:
+            v.append(a[i][j])
+a.reverse()
+for i in range(0,n):
+    for j in range(0,n):
+        if i == j:
+            d.append(a[i][j])
+maxx=max(v)
+minn=min(d)
+
+print(maxx,minn)    
+139)
+    n, m = map(int, input().split())
+#n=int(input())
+a=[]
+v=[]
+for i in range(n):
+    a.append(list(map(int,input().split())))
+
+for i in range(0,n):
+
+    for j in range(0,m):
+        if a[i][j] <0:
+            t=i
+            z=j
+for i in range(0, n):
+    for j in range(0, m):
+        if j==z :
+            del a[i][j]
+for i in range (0,n):
+        if i==t:
+            del a[i]
+for i in a:
+
+    print(*i)    
+
+140)
+    n, m = map(int, input().split())
+a = [list(map(int, input().split())) for _ in range(n)]
+
+x, y = map(int, input().split())
+b = [list(map(int, input().split())) for _ in range(x)]
+
+c = [[0] * y for _ in range(n)]
+
+for i in range(n):
+    for j in range(y):
+        sum_value = 0
+        for k in range(m):
+            sum_value += a[i][k] * b[k][j]
+        c[i][j] = sum_value
+        print(c[i][j], end=" ")
+    print()    
+141)
+    n, m = map(int, input().split())
+
+a=[]
+for i in range(n):
+    a.append(list(map(int,input().split())))
+x, y = map(int, input().split())
+s=0
+l=0
+for i in range(len(a)):
+    for j in range(0,m):
+        if a[i][j]>=x and a[i][j]<=y:
+            s+=a[i][j]
+            l+=1
+print("%.2f" % (s/l))
+142)
+    n=int(input())
+a=[]
+v=[]
+for i in range(n):
+    a.append(list(map(int,input().split())))
+
+for i in range(0,n):
+    for j in range(i,n):
+
+        v.append(a[i][j])
+maxx=max(v)
+minn=min(v)
+
+
+print(*v)
+print(maxx,minn)    
+
+143)
+    n, m = map(int, input().split())
+#n=int(input())
+a=[]
+v=[]
+for i in range(n):
+    a.append(list(map(int,input().split())))
+for i in a:
+    v.append(sorted(i))
+
+for j in v:
+    print(*j)    
+144)
+
+145)
+    n, m = map(int, input().split())
+#n=int(input())
+a=[]
+v=[]
+for i in range(n):
+    a.append(list(map(int,input().split())))
+for i in a:
+    v.append(sum(i))
+for i in range(0,n):
+
+
+        print(*a[i],v[i])    
+
+146)
+
+147)
+    x= input()
+b = x.count("A")
+z= x.count("Y")
+print(b)
+print(z)    
+
+148)
+a = list(input().split())
+
+
+for i in a:
+    if i[0] == "A":
+        print(i)    
+149)
+    a = list(input().split())
+b=0
+z=[]
+for i in a:
+    if i[-2:]=="NA":
+        b+=1
+        z.append(i)
+print(b)
+print(*z)    
+150)
+    s=input().split(" ")
+r=""
+for i in s:
+    if i.find("Info")!=-1:
+        r+=i
+        r+=" "
+print(r)    
+151)
+    a = input()
+
+z=0
+for i in a:
+    if i=="A" or i=="a" or i=="O" or i=="o" or i=="I" or i=="i" or i=="U" or i=="u" or i=="E" or i=="e":
+        z+=1
+print(z)    
+152)
+    a = input()
+b=a[::-1]
+print(b)    
+
+153)
+    a = list(input().split())
+b=[]
+for i in a:
+    print(i,len(i)
+154)
+
+
+    son =int(input())
+son2=str(son)
+s=0
+for i in son2:
+    s+=int(i)
+print(s)    
+155)
+    a =list(input().split())
+b=0
+for i in a:
+    if ord(i[0])<=90:
+        b+=1
+print(b)    
+
+156)
+    a =list(input().split())
+n,m=map(int, input().split())
+x=a[m-1]
+
+for i in range(len(a)):
+    a[m-1]=a[n-1]
+a[n-1]=x    
+print(*a)    
+157)
+    a =list(input().split())
+n=int(input())
+x="TATU"
+
+for i in range(len(a)):
+    a[n-1]=x
+    
+print(*a)
+    
+158)
+    a =list(input().split())
+x=0
+z=0
+for i in a:
+    if len(i)%2==1:
+        z+=1
+    else:
+        x+=1
+print(z*x)    
+
+159)
+    a = list ( map(str , input().split()))
+s=0
+for i in a:
+    if i[0] == 'a' and i[-1] == 'b' :
+        s += 1
+print(s);    
+160)
+    a =input()
+
+z=0
+for i in a:
+    
+    if ord(i)>=65 and ord(i)<90:
+        i=chr(ord(i)+32)
+    elif ord(i)>=97 and ord(i)<=122:    
+        i=chr(ord(i)-32)   
+    print(i, end="")    
+
+161)
+    n=int(input())
+a =input().split()
+
+z=0
+s=0
+b=0
+w=0
+r=0
+for i in a:
+    if ord(i)==65:
+        z+=1
+    elif ord(i)==83:    
+        s+=1
+    elif ord(i)==76:
+        b+=1
+    elif ord(i)==79:
+        w+=1
+    elif ord(i)==77:
+        r+=1
+        
+if z>=2 and s>=2 and b>=1 and w>=1 and r>=1:
+    print("YES")
+else:
+    print("NO")    
+
+162)
+    n=int(input())
+a =input()
+a=a.replace("$","")
+
+print(a)    
+
+163)
+    a =input().split()
+b=[]
+for i in a:
+    b.append(len(i))
+m=max(b)
+z=b.index(m)
+print(a[z])    
+
+164)
+    s=input()
+a,b=map(int,input().split())
+if a<=b:
+    print(s[a-1:b])
+else:
+    t=list(reversed(s[b-1:a]))
+    r=""
+    for i in t:
+        r+=i
+    print(r)    
+165)
+    from math import fabs, sin
+t, s = map(float, input().split())
+
+def f(a,b,c):
+    natija = (2*a-b-sin(c))/(5+fabs(c))
+    return natija
+
+javob = f(t,-2*s,1.17)+f(2.2,t,s-t)
+print(f"{javob:.2f}")    
+
+166)
+    t, s = map(float, input().split())
+
+def G(a,b):
+    natija = (a*a+b*b)/(a*a+2*a*b+3*b*b+4)
+    return natija
+
+javob = G(1.2,s)+G(t,s)+G(2*s-1,s*t)
+print(f"{javob:.2f}")    
+168)
+a,b,c=map(float, input().split())
+
+def f(a,b,c):
+    natija=(max(a,a+b)+max(a,b+c))/(1+max(a+b*c,1.15))
+    return natija
+
+javob = f(a,b,c)
+print(f"{javob:.2f}")    
+
+170)
+    s,t = map(float, input().split())
+
+def h(a,b):
+    natija = a/(b*b+1)+b/(a*a+1)-(a-b)**3
+    return natija
+
+javob = h(s,t)+max(h(s-t,s*t),h(s-t,s+t))+h(1,1)
+print(f"{javob:.2f}")
+    
+
+
+
